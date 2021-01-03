@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ song.name }}</title>
+</head>
+<body>
+    <h1>{{ song.name }}</h1>
+    <form action="" method = 'POST'>
+        {% csrf_token %}
+        <label for="title">New Song Title</label>
+        <input type="text" id='title' name="title" value="{{song.name}}">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Key:{{ song.key }}</h3>
+    <a class = 'button' href="{% url 'edit' pk=song.pk %}">Back to full edit view</a>
+
+
+<div class="container">
+    {% for note in notes %}
+        <div class="song-container">
+
+            <h3>{{ note.comment }}</h3>
+
+            {% if note.hole_1 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.hole_2 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.hole_3 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.hole_4 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.hole_5 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.hole_6 == True %}
+            <div>X</div>
+            {% else %}
+            <div>O</div>
+            {% endif %}
+
+            {% if note.upper_octave == True %}
+            <div>+</div>
+            {% else %}
+            <div></div>
+            {% endif %}
+
+        </div>
+
+    {% endfor %}
+
+
+</div>
+
+</body>
+</html>
