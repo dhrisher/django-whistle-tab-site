@@ -1,28 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit: {{ song.name }}</title>
-</head>
-<body>
+{% extends "tabs/base.html" %}
 
-    <a href="{% url 'delete_song' pk=song.pk  delete=False %}">Delete Song</a>
+{% block title %}Edit: {{ song.name }}{% endblock %}
+
+{% block body_block %}
+
+
+    <a class= 'btn btn-danger' href="{% url 'delete_song' pk=song.pk  delete=False %}">Delete Song</a>
     <h1>{{ song.name }}</h1>
-    <a class = 'button' href="{% url 'edit_name' pk=song.pk %}">Edit Song Name</a>
+    <a class = 'btn btn-dark' href="{% url 'edit_name' pk=song.pk %}">Edit Song Name</a>
     <h3>Key:{{ song.key }}</h3>
-    <a class = 'button' href="{% url 'edit_key' pk=song.pk %}">Edit Key</a>
-    <a class = 'button' href="{% url 'detail' pk=song.pk %}">Exit Edit View</a>
+    <a class = 'btn btn-dark' href="{% url 'edit_key' pk=song.pk %}">Edit Key</a>
+    <a class = 'btn btn-secondary' href="{% url 'detail' pk=song.pk %}">Exit Edit View</a>
 
 
 <div class="container">
+
+    <div class="row align-items-start">
+
     {% for note in notes %}
-        <div class="song-container">
+        <div class="col">
 
             <h3>{{ note.comment }}</h3>
-            <a class="button" href="{% url 'song_edit_comment' pk_song=song.pk pk_note=note.pk %}">Edit Comment</a>
+            <a class="btn btn-dark" href="{% url 'song_edit_comment' pk_song=song.pk pk_note=note.pk %}">Edit Comment</a>
 
             {% if note.hole_1 == True %}
             <div>X</div>
@@ -30,7 +29,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_1 hole_number=1%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_1 hole_number=1%}">Switch</a>
 
             {% if note.hole_2 == True %}
             <div>X</div>
@@ -38,7 +37,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_2 hole_number=2%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_2 hole_number=2%}">Switch</a>
 
 
             {% if note.hole_3 == True %}
@@ -47,7 +46,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_3 hole_number=3%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_3 hole_number=3%}">Switch</a>
 
             {% if note.hole_4 == True %}
             <div>X</div>
@@ -55,7 +54,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_4 hole_number=4%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_4 hole_number=4%}">Switch</a>
 
             {% if note.hole_5 == True %}
             <div>X</div>
@@ -63,7 +62,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_5 hole_number=5%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_5 hole_number=5%}">Switch</a>
 
             {% if note.hole_6 == True %}
             <div>X</div>
@@ -71,7 +70,7 @@
             <div>O</div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_6 hole_number=6%}">Switch</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.hole_6 hole_number=6%}">Switch</a>
 
             {% if note.upper_octave == True %}
             <div>+</div>
@@ -79,18 +78,16 @@
             <div></div>
             {% endif %}
 
-            <a class = 'button' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.upper_octave hole_number=7%}">Switch Octave</a>
+            <a class = 'btn btn-dark' href="{% url 'switch_note' pk_song=song.pk pk_note=note.pk hole_state=note.upper_octave hole_number=7%}">Switch Octave</a>
 
 
-            <a class="button" href="{% url 'delete_note' pk=note.pk %}">Delete Note</a>
+            <a class="btn btn-danger" href="{% url 'delete_note' pk=note.pk %}">Delete Note</a>
 
         </div>
 
     {% endfor %}
-
-    <a class="button" href="{% url 'add_note' pk=song.pk %}">Add Note</a>
-
+    </div>
 </div>
+    <a class="btn btn-primary" href="{% url 'add_note' pk=song.pk %}">Add Note</a>
 
-</body>
-</html>
+{% endblock %}

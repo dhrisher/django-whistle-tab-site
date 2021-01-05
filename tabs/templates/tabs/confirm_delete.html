@@ -1,15 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Confirm Delete</title>
-</head>
-<body>
+{% extends "tabs/base.html" %}
+
+{% block title %}Confirm Delete{% endblock %}
+
+{% block body_block %}
+
     <h3>Are you that you want to delete {{song.name}}?</h3>
     <a href="{% url 'delete_song' pk=song.pk delete=True %}">Yes</a>
     <a href="{% url 'songs' %}">No</a>
-</body>
-</html>
+{% endblock %}
+

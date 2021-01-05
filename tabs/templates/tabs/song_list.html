@@ -1,29 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Song List</title>
-</head>
-<body>
-    <h1>Song List</h1>
+{% extends "tabs/base.html" %}
+
+{% block title %}Song List{% endblock %}
+
+{% block body_block %}
+
+<h2>Song List</h2>
+
 
 <div class="container">
+
+    <div class="row align-items-start">
+
     {% for song in songs %}
-        <div class="song-container">
+        <div class="col">
             <span>Name: {{ song.name }}</span>
             <br>
             <span>Key: {{ song.key }}</span>
-            <a class="button" href="{% url 'detail' pk=song.pk %}">View</a>
+            <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
         </div>
 
     {% endfor %}
 
-    <a class="button" href="{% url 'add_song' %}">Add Song</a>
+    <a class="btn btn-primary" href="{% url 'add_song' %}">Add Song</a>
 
 </div>
+</div>
+{% endblock %}
 
-</body>
-</html>
