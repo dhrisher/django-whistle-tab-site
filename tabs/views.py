@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import *
+from tabs.forms import UserForm, UserProfileInfoForm
 
 
 ##########################################################################################
@@ -224,3 +225,43 @@ def delete_song(request, pk, delete):
         context = {'song': song}
 
         return render(request, 'tabs/confirm_delete.html', context)
+
+
+###########################################################################################
+
+def register(request):
+    registered = False
+
+    if request.method == "POST":
+        user_form = UserForm(data=request.POST)
+        profile_form = UserProfileInfoForm(data=request.POST)
+
+        if user_form.is_valid() and profile_form.is_valid():
+            # save user to database
+            user = user_form.save()
+            # hash the password
+            user.set_password(user.password)
+            # have user with hashed password
+            user.save()
+
+            # commit false to prevent overwriting of user
+            profile = profile_form.save(commit=False)
+            # set up the one to one relationship between the user and userprofileinfo model
+            profile.user = user
+
+            # if profile pic is given
+            if 'profile_pic' in request.FILES:
+                profile.profile_pic = request.FILES['profile_pic']
+
+            profile.save()
+
+            registered = True
+
+        else:
+            print(user_form.errors, profile_form.errors)
+    else:
+        user_form = UserForm()
+        profile_form = UserProfileInfoForm()
+
+    return render(request, 'tabs/registration.html', {'user_form': user_form,
+    'profile_form': profile_form,'registered': registered})

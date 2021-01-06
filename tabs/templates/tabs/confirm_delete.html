@@ -5,7 +5,7 @@
 {% block body_block %}
 
     <h3>Are you that you want to delete {{song.name}}?</h3>
-    <a href="{% url 'delete_song' pk=song.pk delete=True %}">Yes</a>
-    <a href="{% url 'songs' %}">No</a>
+    <a class="btn btn-primary" href="{% url 'delete_song' pk=song.pk delete=True %}">Yes</a>
+    <a class="btn btn-secondary" href="{% url 'songs' %}">No</a>
 {% endblock %}
 
