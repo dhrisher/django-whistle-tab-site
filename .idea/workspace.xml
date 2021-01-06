@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06283578-dfcf-4417-93cb-2b0e473ca75a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +120,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tabs/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
+                <state relative-caret-position="83">
                   <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
@@ -327,7 +320,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55151516" visible="true" weight="0.14752372" />
       <window_info id="Structure" order="1" sideWeight="0.44848484" side_tool="true" visible="true" weight="0.14752372" />
@@ -500,7 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tabs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="83">
           <caret line="238" column="28" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
