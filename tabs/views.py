@@ -230,6 +230,7 @@ def delete_song(request, pk, delete):
 ###########################################################################################
 
 def register(request):
+
     registered = False
 
     if request.method == "POST":
@@ -264,4 +265,4 @@ def register(request):
         profile_form = UserProfileInfoForm()
 
     return render(request, 'tabs/registration.html', {'user_form': user_form,
-    'profile_form': profile_form,'registered': registered})
+                                                      'profile_form': profile_form, 'registered': registered})
