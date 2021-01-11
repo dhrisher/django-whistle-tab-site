@@ -8,7 +8,7 @@
         <h1>Thank you for registering!</h1>
     {% else %}
         <h1>Register Here!</h1>
-        <h3>fil out the form:</h3>
+        <h3>fill out the form:</h3>
     <form method="POST" enctype="multipart/form-data" action="">
         {% csrf_token %}
         {{ user_form.as_p }}

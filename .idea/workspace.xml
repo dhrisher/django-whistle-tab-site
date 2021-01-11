@@ -4,8 +4,13 @@
     <list default="true" id="06283578-dfcf-4417-93cb-2b0e473ca75a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whistletab/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/whistletab/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whistletab/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/whistletab/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +28,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+                <state relative-caret-position="368">
+                  <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -35,8 +40,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/whistletab/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+                <state relative-caret-position="420">
+                  <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
                   <folding>
                     <element signature="e#311#335#0" expanded="true" />
                   </folding>
@@ -47,26 +52,29 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/base.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/song_list.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="46">
-                  <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-end-line="3" />
+                <state relative-caret-position="368">
+                  <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/song_list.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="498">
+                  <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/whistletab/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+                <state relative-caret-position="452">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                  <folding>
+                    <element signature="e#634#666#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -123,8 +131,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tabs/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3473">
-                  <caret line="239" column="24" lean-forward="true" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
+                <state relative-caret-position="429">
+                  <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -135,8 +143,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+                <state relative-caret-position="184">
+                  <caret line="8" column="36" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -153,7 +161,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
+                <state relative-caret-position="161">
                   <caret line="7" selection-start-line="7" selection-end-line="7" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
@@ -165,8 +173,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/registration.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+                <state relative-caret-position="230">
+                  <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -174,7 +182,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tabs/admin.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
+                <state relative-caret-position="161">
                   <caret line="7" selection-start-line="7" selection-end-line="7" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
@@ -205,6 +213,11 @@
       <find>swit</find>
       <find>button</find>
       <find>post</find>
+      <find>reverse</find>
+      <find>uset</find>
+      <find>tabs</find>
+      <find>user_login</find>
+      <find>uset_login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/whistletab/urls.py" />
         <option value="$PROJECT_DIR$/tabs/admin.py" />
         <option value="$PROJECT_DIR$/tabs/templates/tabs/song_edit_name.html" />
         <option value="$PROJECT_DIR$/tabs/templates/tabs/song_edit_key.html" />
@@ -223,13 +235,14 @@
         <option value="$PROJECT_DIR$/tabs/templates/tabs/song_edit.html" />
         <option value="$PROJECT_DIR$/tabs/templates/tabs/confirm_delete.html" />
         <option value="$PROJECT_DIR$/tabs/models.py" />
-        <option value="$PROJECT_DIR$/tabs/urls.py" />
-        <option value="$PROJECT_DIR$/tabs/templates/tabs/base.html" />
-        <option value="$PROJECT_DIR$/tabs/templates/tabs/registration.html" />
         <option value="$PROJECT_DIR$/tabs/forms.py" />
-        <option value="$PROJECT_DIR$/tabs/views.py" />
-        <option value="$PROJECT_DIR$/whistletab/settings.py" />
+        <option value="$PROJECT_DIR$/whistletab/urls.py" />
+        <option value="$PROJECT_DIR$/tabs/templates/tabs/registration.html" />
+        <option value="$PROJECT_DIR$/tabs/urls.py" />
         <option value="$PROJECT_DIR$/tabs/templates/tabs/login.html" />
+        <option value="$PROJECT_DIR$/tabs/templates/tabs/base.html" />
+        <option value="$PROJECT_DIR$/whistletab/settings.py" />
+        <option value="$PROJECT_DIR$/tabs/views.py" />
       </list>
     </option>
   </component>
@@ -330,8 +343,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54848486" visible="true" weight="0.14752372" />
-      <window_info id="Structure" order="1" sideWeight="0.45151514" side_tool="true" visible="true" weight="0.14752372" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5469697" visible="true" weight="0.14752372" />
+      <window_info id="Structure" order="1" sideWeight="0.4530303" side_tool="true" visible="true" weight="0.14752372" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32982087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
@@ -376,23 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/whistletab/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/song_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -428,40 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/confirm_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tabs/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -472,41 +434,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/confirm_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/song_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/whistletab/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        <state relative-caret-position="420">
+          <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
           <folding>
             <element signature="e#311#335#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/song_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tabs/templates/tabs/login.html">
+    <entry file="file://$PROJECT_DIR$/tabs/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whistletab/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tabs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3473">
-          <caret line="239" column="24" lean-forward="true" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
+        <state relative-caret-position="429">
+          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

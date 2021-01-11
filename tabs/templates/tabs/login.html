@@ -1,12 +1,12 @@
-{% extends 'basic_app/base.html' %}
+{% extends 'tabs/base.html' %}
 
 {% block title %}Login{% endblock %}
 
-{% body_block}
+{% block body_block %}
 
 <div class="jumbotron">
     <h1>Please Login</h1>
-    <form action="{% url 'uset_login' %}" method = "POST">
+    <form action="{% url 'user_login' %}" method = "POST">
         {% csrf_token %}
         <label for="username">Username:</label>
         <input type="text" name="username" placeholder="Enter Username">

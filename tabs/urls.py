@@ -13,5 +13,6 @@ urlpatterns = [
     path('song_edit_key/<int:pk>', views.song_edit_key, name='edit_key'),
     path('song_add', views.add_song, name='add_song'),
     path('song_delete/<int:pk>/<delete>', views.delete_song, name='delete_song'),
-    path('register/',views.register,name='register'),
+    path('register/', views.register, name='register'),
+    path('logout/', views.user_logout, name='logout'),
 ]

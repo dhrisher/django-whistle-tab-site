@@ -137,4 +137,4 @@ STATICFILES_DIRS = [STATIC_DIR,]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
-LOGIN_URL = '/tabs/user_login'
+LOGIN_URL = '/user_login'
