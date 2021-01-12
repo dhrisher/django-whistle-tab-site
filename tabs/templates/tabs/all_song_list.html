@@ -4,8 +4,7 @@
 
 {% block body_block %}
 
-<h2>{{current_user.username}}'s songs</h2>
-
+<h2>All Songs</h2>
 
 <div class="container">
 
@@ -16,6 +15,9 @@
             <span>Name: {{ song.name }}</span>
             <br>
             <span>Key: {{ song.key }}</span>
+            <br>
+            <span>User: {{ song.user.username }}</span>
+
             <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
         </div>
 

@@ -6,14 +6,27 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
+#########################################################################################
 
-##########################################################################################
-# Renders all songs held on the song_list.html template
+def song_list_all(request):
 
-def song_list(request):
+    current_user = request.user
     songs = Song.objects.all()
 
-    context = {'songs': songs}
+    context = {'songs': songs, 'current_user': current_user}
+
+    return render(request, 'tabs/all_song_list.html', context)
+
+##########################################################################################
+# Renders all songs for the user held on the song_list.html template
+
+@login_required
+def song_list(request):
+
+    current_user = request.user
+    songs = current_user.song_set.all()
+
+    context = {'songs': songs, 'current_user': current_user}
 
     return render(request, 'tabs/song_list.html', context)
 
@@ -208,7 +221,8 @@ def delete_note(request, pk):
 ##########################################################################################
 
 def add_song(request):
-    new_song = Song(name="New Song", key="X")
+    current_user = request.user
+    new_song = Song(name="New Song", key="X", user=current_user)
     new_song.save()
 
     return redirect('/')

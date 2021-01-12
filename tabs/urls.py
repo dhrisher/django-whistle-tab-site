@@ -2,7 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('',views.song_list, name="songs"),
+    path('', views.song_list_all, name="songs_all"),
+    path('my_songs/',views.song_list, name="songs"),
     path('song_detail/<int:pk>/', views.song_detail, name="detail"),
     path('add/<int:pk>/', views.add_note, name="add_note"),
     path('edit/<int:pk>/', views.song_edit, name='edit'),
