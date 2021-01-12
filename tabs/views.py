@@ -34,12 +34,14 @@ def song_list(request):
 ##########################################################################################
 # Renders an individual song info on the song_detail.html template
 # notes = song.notes_set.all() allows all of the note that have the current song as their Fk to be gathered
+# current user is taken to allow the song to be edited if the current user is the one who owns the song
 
 def song_detail(request, pk):
+    current_user = request.user
     song = Song.objects.get(id=pk)
     notes = song.notes_set.all()
 
-    context = {'notes': notes, 'song': song}
+    context = {'notes': notes, 'song': song, 'current_user': current_user}
 
     return render(request, 'tabs/song_detail.html', context)
 

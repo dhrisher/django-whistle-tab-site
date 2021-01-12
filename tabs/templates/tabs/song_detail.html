@@ -5,7 +5,11 @@
 {% block body_block %}
     <h1>{{ song.name }}</h1>
     <h3>Key:{{ song.key }}</h3>
+
+    {% if current_user == song.user %}
     <a class = 'btn btn-primary' href="{% url 'edit' pk=song.pk %}">Edit Song</a>
+    {% endif %}
+
     <a class = 'btn btn-secondary' href="/">Back to Song List</a>
 
 
