@@ -48,10 +48,16 @@ def song_detail(request, pk):
 
 ##########################################################################################
 # Changes the song detail page to an edit view (song/edit.html)
+# Added a check to see if the user matches, this will stop people manipulating the url to edit other users songs
 
 def song_edit(request, pk):
+    current_user = request.user
     song = Song.objects.get(id=pk)
     notes = song.notes_set.all()
+
+    if current_user != song.user:
+        return redirect("/")
+
 
     context = {'notes': notes, 'song': song}
 

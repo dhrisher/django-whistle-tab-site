@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06283578-dfcf-4417-93cb-2b0e473ca75a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/all_song_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/all_song_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/templates/tabs/song_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/templates/tabs/song_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tabs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,8 +134,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tabs/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+                <state relative-caret-position="276">
+                  <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -337,7 +335,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54545456" visible="true" weight="0.14752372" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54545456" visible="true" weight="0.14752372" />
       <window_info id="Structure" order="1" sideWeight="0.45454547" side_tool="true" visible="true" weight="0.14752372" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32982087" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,7 +346,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32932165" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28494042" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28494042" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -522,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tabs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="276">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
