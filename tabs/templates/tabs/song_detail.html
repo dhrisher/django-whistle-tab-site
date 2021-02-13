@@ -3,6 +3,102 @@
 {% block title %}{{song.name }}{% endblock %}
 
 {% block body_block %}
+
+<style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #ffd100;
+
+}
+
+.comment {
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width:200px;
+}
+
+.comment_container {
+  height: 400px;
+  width: 200px;
+  display: inline-block;
+
+}
+
+.whistle_container {
+  border: 3px solid #ffee32;
+  display: inline-block;
+  position: relative;
+  height: 320px;
+  width: 110px;
+  background-color: #ffd100;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-left: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translate(-50%,0);
+}
+
+.whistle_body {
+  position: absolute;
+  background-color: #575757;
+  height: 240px;
+  width: 30px;
+  border-radius: 10px;
+  clip-path: polygon(20% 0, 80% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+}
+
+.hole {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #d6d6d6;
+  height: 15px;
+  width: 15px;
+  left: 50%;
+  margin: 8px;
+}
+
+.hole.on{
+  background-color: black;
+  border: 2px solid #d6d6d6;
+
+}
+
+.hole_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.octave_container {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  top: 25px;
+  transform: translate(-50%, 0);
+}
+
+.octave {
+  fill: transparent;
+}
+
+.octave.on {
+  fill: black;
+}
+</style>
+
     <h1>{{ song.name }}</h1>
     <h3>Key:{{ song.key }}</h3>
 
@@ -18,53 +114,66 @@
     <div class="row align-items-start">
 
     {% for note in notes %}
-        <div class="col">
 
-            <h3>{{ note.comment }}</h3>
 
-            {% if note.hole_1 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+            <div class ="comment_container">
+                <div class = "comment">
+                    <h3>{{ note.comment }}</h3>
+                </div>
+                <div class = "whistle_container">
+                    {% if note.upper_octave == True %}
+                        <div class="octave_container">
+                    <svg class = "octave on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                   </div>
+                    {% else %}
+                        <div class="octave_container">
+                    <svg class = "octave" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                   </div>
+                    {% endif %}
 
-            {% if note.hole_2 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+                  <div class = "whistle_body">
+                    <div class = "hole_container">
 
-            {% if note.hole_3 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+                        {% if note.hole_1 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
 
-            {% if note.hole_4 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+                        {% if note.hole_2 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
 
-            {% if note.hole_5 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+                        {% if note.hole_3 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
 
-            {% if note.hole_6 == True %}
-            <div>X</div>
-            {% else %}
-            <div>O</div>
-            {% endif %}
+                        {% if note.hole_4 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
 
-            {% if note.upper_octave == True %}
-            <div>+</div>
-            {% else %}
-            <div></div>
-            {% endif %}
+                        {% if note.hole_5 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
 
-        </div>
+                        {% if note.hole_6 == True %}
+                            <div class = "hole on"></div>
+                        {% else %}
+                            <div class = "hole"></div>
+                        {% endif %}
+                    </div>
+                  </div>
+                </div>
+            </div>
+
 
     {% endfor %}
 

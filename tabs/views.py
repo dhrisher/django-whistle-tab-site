@@ -6,10 +6,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
+
 #########################################################################################
 
 def song_list_all(request):
-
     current_user = request.user
     songs = Song.objects.all()
 
@@ -17,12 +17,12 @@ def song_list_all(request):
 
     return render(request, 'tabs/all_song_list.html', context)
 
+
 ##########################################################################################
 # Renders all songs for the user held on the song_list.html template
 
 @login_required
 def song_list(request):
-
     current_user = request.user
     songs = current_user.song_set.all()
 
@@ -57,7 +57,6 @@ def song_edit(request, pk):
 
     if current_user != song.user:
         return redirect("/")
-
 
     context = {'notes': notes, 'song': song}
 
