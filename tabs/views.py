@@ -226,13 +226,19 @@ def delete_note(request, pk):
 
 
 ##########################################################################################
+# add new song for user then assign variable to equal all new songs plus the new one.
 
 def add_song(request):
+
     current_user = request.user
     new_song = Song(name="New Song", key="X", user=current_user)
     new_song.save()
 
-    return redirect('/')
+    songs = current_user.song_set.all()
+
+    context = {'songs': songs, 'current_user': current_user}
+
+    return render(request, 'tabs/song_list.html', context)
 
 
 ###########################################################################################

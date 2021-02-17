@@ -4,7 +4,7 @@
 
 {% block body_block %}
 
-<h2>{{current_user.username}}'s songs</h2>
+<h2 id="list_title">{{current_user.username}}'s songs</h2>
 
 
 <div class="container">
@@ -12,18 +12,20 @@
     <div class="row align-items-start">
 
     {% for song in songs %}
-        <div class="whistle_container">
-            <span>Name: {{ song.name }}</span>
-            <br>
-            <span>Key: {{ song.key }}</span>
-            <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
+        <div class="outer_container song_list">
+            <div class="inner_container song_list">
+                <span>Name: {{ song.name }}</span>
+                <br>
+                <span>Key: {{ song.key }}</span>
+                <br>
+                <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
+            </div>
+
         </div>
 
     {% endfor %}
-
-    <a class="btn btn-primary" href="{% url 'add_song' %}">Add Song</a>
-
 </div>
+    <a class="btn btn-primary" href="{% url 'add_song' %}">Add Song</a>
 </div>
 {% endblock %}
 

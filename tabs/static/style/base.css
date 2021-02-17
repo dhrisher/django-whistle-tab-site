@@ -17,14 +17,13 @@ body {
   width:200px;
 }
 
-.comment_container {
+.outer_container {
   height: 400px;
   width: 200px;
   display: inline-block;
-
 }
 
-.whistle_container {
+.inner_container {
   border: 3px solid #ffee32;
   display: inline-block;
   position: relative;
@@ -92,3 +91,21 @@ body {
   fill: black;
 }
 
+/* song list styling */
+
+.outer_container.song_list {
+
+}
+
+.inner_container.song_list {
+  height: 220px;
+  width: 180px;
+  padding: 6px;
+  text-align: center;
+}
+
+#list_title {
+    padding: 20px;
+    text-align: center;
+
+}

@@ -21,11 +21,11 @@
     {% for note in notes %}
 
 
-            <div class ="comment_container">
+            <div class ="outer_container">
                 <div class = "comment">
                     <h3>{{ note.comment }}</h3>
                 </div>
-                <div class = "whistle_container">
+                <div class = "inner_container">
                     {% if note.upper_octave == True %}
                         <div class="octave_container">
                     <svg class = "octave on" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
