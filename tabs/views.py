@@ -242,14 +242,24 @@ def add_song(request):
 
 
 ###########################################################################################
+# check if delete stat passed through url is true, delete the song and find the new user song
+# then return to previous page
+# if state is not delete then render the delete confirmation page
 
 def delete_song(request, pk, delete):
+    current_user = request.user
     song = Song.objects.get(id=pk)
     delete_state = delete
 
     if delete_state == "True":
+
         song.delete()
-        return redirect('/')
+
+        songs = current_user.song_set.all()
+
+        context = {'songs': songs, 'current_user': current_user}
+
+        return render(request, 'tabs/song_list.html', context)
 
     else:
 

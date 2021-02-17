@@ -94,7 +94,7 @@ body {
 /* song list styling */
 
 .outer_container.song_list {
-
+    height: 240px;
 }
 
 .inner_container.song_list {
