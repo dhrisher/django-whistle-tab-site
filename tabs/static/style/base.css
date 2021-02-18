@@ -1,6 +1,7 @@
 :root {
   --color1: #e6fffc;
-  --color2: #eb3480;
+  --color2: #b8d1ff;
+  --color3: #fff;
   --whistle-body: #575757;
 }
 
@@ -113,5 +114,28 @@ body {
 #list_title {
     padding: 20px;
     text-align: center;
+}
+
+.view_container {
+  height: 95px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.song_text_container {
+  border: 3px solid var(--color2);
+  height: 110px;
+  width: 160px;
+  background-color: var(--color3);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+
+}
+
+#view_button_container {
+    height: 40px;
+    padding-top: 30px;
 
 }

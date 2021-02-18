@@ -14,11 +14,18 @@
     {% for song in songs %}
         <div class="outer_container song_list">
             <div class="inner_container song_list">
-                <span>Name: {{ song.name }}</span>
-                <br>
-                <span>Key: {{ song.key }}</span>
-                <br>
-                <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
+                <div class="song_text_container">
+                    <span>Name: {{ song.name }}</span>
+                    <br>
+                    <span>Key: {{ song.key }}</span>
+                    <br>
+                </div>
+
+                <div class="view_container">
+                    <div id="view_button_container">
+                        <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
+                    </div>
+                </div>
             </div>
 
         </div>
