@@ -1,3 +1,8 @@
+:root {
+  --color1: #e6fffc;
+  --color2: #eb3480;
+  --whistle-body: #575757;
+}
 
 *{
   box-sizing: border-box;
@@ -5,9 +10,10 @@
 }
 
 body {
-  background-color: #ffd100;
-
+  background-color: var(--color1);
 }
+
+
 
 .comment {
   height: 70px;
@@ -24,12 +30,12 @@ body {
 }
 
 .inner_container {
-  border: 3px solid #ffee32;
+  border: 3px solid var(--color2);
   display: inline-block;
   position: relative;
   height: 320px;
   width: 110px;
-  background-color: #ffd100;
+  background-color: var(--color1);
   border-radius: 10px;
   margin-top: 0px;
   margin-left: 50%;
@@ -39,7 +45,7 @@ body {
 
 .whistle_body {
   position: absolute;
-  background-color: #575757;
+  background-color: var(--whistle-body);
   height: 240px;
   width: 30px;
   border-radius: 10px;
