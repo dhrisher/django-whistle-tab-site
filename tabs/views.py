@@ -8,14 +8,35 @@ from django.urls import reverse
 
 
 #########################################################################################
+# display all songs on the database
+# when a post request is submitted from the search bar then display the filtered results
+# logic included to deal with combinations of search parameters
 
 def song_list_all(request):
     current_user = request.user
     songs = Song.objects.all()
 
-    context = {'songs': songs, 'current_user': current_user}
+    if request.method == 'POST':
+        song_name = request.POST['song_name']
+        key = request.POST['keys']
 
-    return render(request, 'tabs/all_song_list.html', context)
+        if key == 'All' and song_name == '':
+            songs = Song.objects.all()
+        elif key == 'All':
+            songs = songs.filter(name__contains=song_name)
+        elif song_name == '':
+            songs = songs.filter(key=key)
+        else:
+            songs = songs.filter(key=key).filter(name__contains=song_name)
+
+        context = {'songs': songs, 'current_user': current_user, 'song_name': song_name, 'key' : key}
+
+        return render(request, 'tabs/all_song_list.html', context)
+    else:
+
+        context = {'songs': songs, 'current_user': current_user, 'song_name': "All", 'key' : 'All'}
+
+        return render(request, 'tabs/all_song_list.html', context)
 
 
 ##########################################################################################
