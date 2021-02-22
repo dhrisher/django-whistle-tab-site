@@ -3,6 +3,8 @@
   --color2: #b8d1ff;
   --color3: #fff;
   --whistle-body: #575757;
+  --primary-button: #0077ff;
+  --dark-button: #2b2b2b;
 }
 
 *{
@@ -13,8 +15,6 @@
 body {
   background-color: var(--color1);
 }
-
-
 
 .comment {
   height: 70px;
@@ -138,4 +138,35 @@ body {
     height: 40px;
     padding-top: 30px;
 
+}
+
+/* --------------------------button styling---------------------------- */
+
+.button:link,
+.button:visited {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*primary button*/
+
+.button.button-primary:link,
+.button.button-primary:visited {
+  background-color: var(--primary-button);
+}
+
+/* dark button */
+
+.button.button-dark:link,
+.button.button-dark:visited {
+  background-color: var(--dark-button);
 }

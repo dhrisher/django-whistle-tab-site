@@ -23,7 +23,7 @@
 
                 <div class="view_container">
                     <div id="view_button_container">
-                        <a class="btn btn-dark" href="{% url 'detail' pk=song.pk %}">View</a>
+                        <a class="button button-dark" href="{% url 'detail' pk=song.pk %}">View</a>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
     {% endfor %}
 
 </div>
-    <a class="btn btn-primary" href="{% url 'add_song' %}">Add Song</a>
+    <a class="button button-primary" href="{% url 'add_song' %}">Add Song</a>
 </div>
 {% endblock %}
 

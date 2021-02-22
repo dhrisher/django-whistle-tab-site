@@ -255,7 +255,7 @@ def delete_song(request, pk, delete):
 
         song.delete()
 
-        songs = current_user.song_set.all()
+        songs = current_user.song_set.all
 
         context = {'songs': songs, 'current_user': current_user}
 
